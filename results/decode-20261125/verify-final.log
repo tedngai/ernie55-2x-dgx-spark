@@ -1,0 +1,10 @@
+== health ==
+200
+== model ==
+baidu/ERNIE-5.5-Flash-Preview 400000
+== 8K retrieval ==
+Submitting 7,986 prompt tokens
+{"prompt_tokens": 7986, "ttft_s": 2.81, "elapsed_s": 2.96, "answer": "OPAL-4917", "passed": true}
+== decode (one wave per workload) ==
+{"workload": "code", "concurrency": 1, "repeat": 1, "temperature": 0, "median_stream_decode_tok_s": 48.85, "aggregate_decode_tok_s": 48.85, "accepted_per_draft": 2.66, "acceptance_pct": 53.2, "acceptance_by_position_pct": {"0": 84.9, "1": 64.2, "2": 49.1, "3": 35.8, "4": 32.1}, "streams": [{"ttft_s": 0.198, "tokens": 192, "prompt_tokens": 70, "decode_tok_s": 48.85}]}
+{"workload": "prose", "concurrency": 1, "repeat": 1, "temperature": 0, "median_stream_decode_tok_s": 37.16, "aggregate_decode_tok_s": 37.16, "accepted_per_draft": 1.718, "acceptance_pct": 34.4, "acceptance_by_position_pct": {"0": 69.0, "1": 47.9, "2": 29.6, "3": 16.9, "4": 8.5}, "streams": [{"ttft_s": 0.19, "tokens": 192, "prompt_tokens": 66, "decode_tok_s": 37.16}]}

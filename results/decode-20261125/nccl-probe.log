@@ -1,0 +1,198 @@
+ernie55-nccl-Socket-4-rank0.log rc=0
+head:177:177 [0] NCCL INFO NET/Socket : Using [0]enp1s0f1np1:HEAD_IP<0>
+head:177:177 [0] NCCL INFO NET/IB : No device found.
+head:177:177 [0] NCCL INFO NET/IB : Using [RO]; OOB enp1s0f1np1:HEAD_IP<0>
+head:177:177 [0] NCCL INFO Using network Socket
+head:177:177 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'enp1s0f1np1'
+head:177:177 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+head:177:177 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+RESULT rank=0 bytes=8192 microseconds=705.8
+RESULT rank=0 bytes=49152 microseconds=614.5
+RESULT rank=0 bytes=147456 microseconds=668.3
+RESULT rank=0 bytes=3145728 microseconds=1882.2
+ernie55-nccl-Socket-4-rank1.log rc=0
+worker:177:177 [0] NCCL INFO NET/Socket : Using [0]enp1s0f1np1:WORKER_IP<0>
+worker:177:177 [0] NCCL INFO NET/IB : No device found.
+worker:177:177 [0] NCCL INFO NET/IB : Using [RO]; OOB enp1s0f1np1:WORKER_IP<0>
+worker:177:177 [0] NCCL INFO Using network Socket
+worker:177:177 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'enp1s0f1np1'
+worker:177:177 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [receive] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [receive] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [send] via NET/Socket/0
+worker:177:177 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [send] via NET/Socket/0
+RESULT rank=1 bytes=8192 microseconds=704.9
+RESULT rank=1 bytes=49152 microseconds=614.5
+RESULT rank=1 bytes=147456 microseconds=668.4
+RESULT rank=1 bytes=3145728 microseconds=1883.1
+ernie55-nccl-IB-4-rank0.log rc=0
+head:177:177 [0] NCCL INFO NET/IB: [1] rocep1s0f1:uverbs1:1/RoCE provider=Mlx5 speed=200000 context=0x942c6c0 pciPath=/sys/devices/pci0000:00/0000:00:00.0/0000:01:00.0 ar=0
+head:177:177 [0] NCCL INFO NET/IB: [3] roceP2p1s0f1:uverbs3:1/RoCE provider=Mlx5 speed=200000 context=0x946de10 pciPath=/sys/devices/pci0002:00/0002:00:00.0/0002:01:00.0 ar=0
+head:177:177 [0] NCCL INFO NET/IB : Made virtual device [0] name=rocep1s0f1 speed=200000 ndevs=1
+head:177:177 [0] NCCL INFO NET/IB : Made virtual device [1] name=roceP2p1s0f1 speed=200000 ndevs=1
+head:177:177 [0] NCCL INFO NET/IB : Using [0]rocep1s0f1:1/RoCE [1]roceP2p1s0f1:1/RoCE [RO]; OOB enp1s0f1np1:HEAD_IP<0>
+head:177:177 [0] NCCL INFO Using network IB
+head:177:177 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 0 'rocep1s0f1'
+head:177:177 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 1 'roceP2p1s0f1'
+head:177:177 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+head:177:177 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/IB/1
+head:177:177 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+head:177:177 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [receive] via NET/IB/1
+head:177:177 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0
+head:177:177 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/IB/1
+head:177:177 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [send] via NET/IB/0
+head:177:177 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [send] via NET/IB/1
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xf0ab8400e000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xf0ab84049000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xf0ab84088000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xf0ab840c3000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xf0ab84102000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xf0ab8413d000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xf0ab8417c000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xf0ab841b7000)
+head:177:185 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2794 pkey=0 pd=0xf0ab84048e10
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2795 pkey=0 pd=0xf0ab84048e10
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2873 pkey=0 pd=0xf0ab84087d50
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 1 IbDev 1 Port 1 qp_num 2873 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1d6e6b ctsFifoLkey=0x1d6e6b
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 1 Port 1 qp_num 2873 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2874 pkey=0 pd=0xf0ab84087d50
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2875 pkey=0 pd=0xf0ab84087d50
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2796 pkey=0 pd=0xf0ab84048e10
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 0 IbDev 0 Port 1 qp_num 2796 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1be1de ctsFifoLkey=0x1be1de
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 0 Port 1 qp_num 2796 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2876 pkey=0 pd=0xf0ab84087d50
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 1 IbDev 1 Port 1 qp_num 2876 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1dd9d8 ctsFifoLkey=0x1dd9d8
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 1 Port 1 qp_num 2876 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2797 pkey=0 pd=0xf0ab84048e10
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 0 IbDev 0 Port 1 qp_num 2797 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1be3e3 ctsFifoLkey=0x1be3e3
+head:177:185 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 0 Port 1 qp_num 2797 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 1 Port 1 qp_num 2873 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 2796 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2798 pkey=0 pd=0xf0ab84048e10
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2799 pkey=0 pd=0xf0ab84048e10
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 1 Port 1 qp_num 2876 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2877 pkey=0 pd=0xf0ab84087d50
+head:177:185 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2878 pkey=0 pd=0xf0ab84087d50
+head:177:185 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 2797 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+RESULT rank=0 bytes=8192 microseconds=24.4
+RESULT rank=0 bytes=49152 microseconds=32.0
+RESULT rank=0 bytes=147456 microseconds=54.5
+RESULT rank=0 bytes=3145728 microseconds=335.3
+ernie55-nccl-IB-4-rank1.log rc=0
+worker:177:177 [0] NCCL INFO NET/IB: [1] rocep1s0f1:uverbs1:1/RoCE provider=Mlx5 speed=200000 context=0xab56700 pciPath=/sys/devices/pci0000:00/0000:00:00.0/0000:01:00.0 ar=0
+worker:177:177 [0] NCCL INFO NET/IB: [3] roceP2p1s0f1:uverbs3:1/RoCE provider=Mlx5 speed=200000 context=0xab97e50 pciPath=/sys/devices/pci0002:00/0002:00:00.0/0002:01:00.0 ar=0
+worker:177:177 [0] NCCL INFO NET/IB : Made virtual device [0] name=rocep1s0f1 speed=200000 ndevs=1
+worker:177:177 [0] NCCL INFO NET/IB : Made virtual device [1] name=roceP2p1s0f1 speed=200000 ndevs=1
+worker:177:177 [0] NCCL INFO NET/IB : Using [0]rocep1s0f1:1/RoCE [1]roceP2p1s0f1:1/RoCE [RO]; OOB enp1s0f1np1:WORKER_IP<0>
+worker:177:177 [0] NCCL INFO Using network IB
+worker:177:177 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 0 'rocep1s0f1'
+worker:177:177 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 1 'roceP2p1s0f1'
+worker:177:177 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+worker:177:177 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/IB/1
+worker:177:177 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+worker:177:177 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [receive] via NET/IB/1
+worker:177:177 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/IB/0
+worker:177:177 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/IB/1
+worker:177:177 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [send] via NET/IB/0
+worker:177:177 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [send] via NET/IB/1
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xe863e000e000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xe863e0049000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xe863e0088000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2794 pkey=0 pd=0xe863e000df50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 0 IbDev 0 Port 1 qp_num 2794 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1be1de ctsFifoLkey=0x1be1de
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 0 Port 1 qp_num 2794 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2873 pkey=0 pd=0xe863e00488d0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 1 IbDev 1 Port 1 qp_num 2873 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1da6a7 ctsFifoLkey=0x1da6a7
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 1 Port 1 qp_num 2873 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xe863e013b000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xe863e017a000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xe863e01b5000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xe863e01f4000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xe863e022f000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 2794 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2874 pkey=0 pd=0xe863e00488d0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2875 pkey=0 pd=0xe863e00488d0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 1 Port 1 qp_num 2873 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2795 pkey=0 pd=0xe863e000df50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 0 IbDev 0 Port 1 qp_num 2795 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1bddda ctsFifoLkey=0x1bddda
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 0 Port 1 qp_num 2795 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2796 pkey=0 pd=0xe863e000df50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2797 pkey=0 pd=0xe863e000df50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2876 pkey=0 pd=0xe863e00488d0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 1 IbDev 1 Port 1 qp_num 2876 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1d9b9a ctsFifoLkey=0x1d9b9a
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 1 Port 1 qp_num 2876 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2877 pkey=0 pd=0xe863e00488d0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=1 devName=roceP2p1s0f1 ndevs=2 nmdevs=2 qp_num=2878 pkey=0 pd=0xe863e00488d0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2798 pkey=0 pd=0xe863e000df50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2799 pkey=0 pd=0xe863e000df50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 2795 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 1 Port 1 qp_num 2876 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+RESULT rank=1 bytes=8192 microseconds=24.1
+RESULT rank=1 bytes=49152 microseconds=32.0
+RESULT rank=1 bytes=147456 microseconds=54.5
+RESULT rank=1 bytes=3145728 microseconds=335.2
+ernie55-nccl-IB-1-rank0.log rc=0
+head:176:176 [0] NCCL INFO NET/IB: [1] rocep1s0f1:uverbs1:1/RoCE provider=Mlx5 speed=200000 context=0x14efb710 pciPath=/sys/devices/pci0000:00/0000:00:00.0/0000:01:00.0 ar=0
+head:176:176 [0] NCCL INFO NET/IB: [3] roceP2p1s0f1:uverbs3:1/RoCE provider=Mlx5 speed=200000 context=0x14f3ce60 pciPath=/sys/devices/pci0002:00/0002:00:00.0/0002:01:00.0 ar=0
+head:176:176 [0] NCCL INFO NET/IB : Made virtual device [0] name=rocep1s0f1 speed=200000 ndevs=1
+head:176:176 [0] NCCL INFO NET/IB : Made virtual device [1] name=roceP2p1s0f1 speed=200000 ndevs=1
+head:176:176 [0] NCCL INFO NET/IB : Using [0]rocep1s0f1:1/RoCE [1]roceP2p1s0f1:1/RoCE [RO]; OOB enp1s0f1np1:HEAD_IP<0>
+head:176:176 [0] NCCL INFO Using network IB
+head:176:176 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 0 'rocep1s0f1'
+head:176:176 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 1 'roceP2p1s0f1'
+head:176:176 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+head:176:176 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0
+head:176:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xf049c400b000)
+head:176:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xf049c4046000)
+head:176:184 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+head:176:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2800 pkey=0 pd=0xf049c400ae20
+head:176:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2801 pkey=0 pd=0xf049c400ae20
+head:176:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2802 pkey=0 pd=0xf049c400ae20
+head:176:184 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 0 IbDev 0 Port 1 qp_num 2802 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1bc1c0 ctsFifoLkey=0x1bc1c0
+head:176:184 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 0 Port 1 qp_num 2802 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+head:176:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 2802 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+RESULT rank=0 bytes=8192 microseconds=34.5
+RESULT rank=0 bytes=49152 microseconds=64.0
+RESULT rank=0 bytes=147456 microseconds=113.7
+RESULT rank=0 bytes=3145728 microseconds=469.0
+ernie55-nccl-IB-1-rank1.log rc=0
+worker:177:177 [0] NCCL INFO NET/IB: [1] rocep1s0f1:uverbs1:1/RoCE provider=Mlx5 speed=200000 context=0x26646700 pciPath=/sys/devices/pci0000:00/0000:00:00.0/0000:01:00.0 ar=0
+worker:177:177 [0] NCCL INFO NET/IB: [3] roceP2p1s0f1:uverbs3:1/RoCE provider=Mlx5 speed=200000 context=0x26687e50 pciPath=/sys/devices/pci0002:00/0002:00:00.0/0002:01:00.0 ar=0
+worker:177:177 [0] NCCL INFO NET/IB : Made virtual device [0] name=rocep1s0f1 speed=200000 ndevs=1
+worker:177:177 [0] NCCL INFO NET/IB : Made virtual device [1] name=roceP2p1s0f1 speed=200000 ndevs=1
+worker:177:177 [0] NCCL INFO NET/IB : Using [0]rocep1s0f1:1/RoCE [1]roceP2p1s0f1:1/RoCE [RO]; OOB enp1s0f1np1:WORKER_IP<0>
+worker:177:177 [0] NCCL INFO Using network IB
+worker:177:177 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 0 'rocep1s0f1'
+worker:177:177 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 1 'roceP2p1s0f1'
+worker:177:177 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+worker:177:177 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/IB/0
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0xf2e56000b000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0xf2e560046000)
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2800 pkey=0 pd=0xf2e56000ae50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: NCCL Dev 0 IbDev 0 Port 1 qp_num 2800 mtu 3 GID <n> (<gid>) ctsFifoRkey=0x1b8f8c ctsFifoLkey=0x1b8f8c
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbConnect: IbDev 0 Port 1 qp_num 2800 query_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 2800 set_ece={supported=1, vendor_id=0x15b3, options=0x30000002, comp_mask=0x0}
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2801 pkey=0 pd=0xf2e56000ae50
+worker:177:184 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=rocep1s0f1 ndevs=2 nmdevs=2 qp_num=2802 pkey=0 pd=0xf2e56000ae50
+RESULT rank=1 bytes=8192 microseconds=34.5
+RESULT rank=1 bytes=49152 microseconds=64.1
+RESULT rank=1 bytes=147456 microseconds=113.6
+RESULT rank=1 bytes=3145728 microseconds=468.9

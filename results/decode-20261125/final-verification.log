@@ -1,0 +1,9 @@
+[2026-11-25T21:42:21+0000] Switching to the saved RoCE / DSpark 5 / wider graphs profile
+ernie55
+ernie55
+[2026-11-25T21:42:37+0000] Waiting for the final profile
+(EngineCore pid=358) INFO 11-25 21:52:39 [kv_cache_utils.py:2327] GPU KV cache size: 1,048,411 tokens, Maximum concurrency for 400,000 tokens per request: 2.62x
+[2026-11-25T21:53:10+0000] Validating near the advertised 400K limit
+Submitting 399,403 prompt tokens
+{"prompt_tokens": 399403, "ttft_s": 336.45, "elapsed_s": 336.46, "answer": "OPAL-4917", "passed": true}
+[2026-11-25T21:58:48+0000] Final profile healthy; near-window check passed
